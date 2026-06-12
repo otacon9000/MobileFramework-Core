@@ -1,0 +1,12 @@
+{
+  "_meta": { "language": "it", "version": 1 },
+  "btn_play":        "Gioca",
+  "btn_settings":    "Impostazioni",
+  "btn_back":        "Indietro",
+  "hud_score":       "Punteggio",
+  "hud_best":        "Migliore",
+  "gameover_title":  "Fine partita",
+  "gameover_retry":  "Riprova",
+  "gameover_home":   "Menu",
+  "lives_remaining": "Hai {0} {0:vita|vite} rimanenti"
+}

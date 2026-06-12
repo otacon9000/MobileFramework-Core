@@ -1,0 +1,17 @@
+{
+  "name": "com.tuostudio.mobileframework",
+  "version": "1.0.0",
+  "displayName": "Mobile Game Framework",
+  "description": "Framework base per giochi mobile Unity. GameManager, AudioManager, SaveSystem, UIManager, LocalizationManager, EventBus.",
+  "unity": "6000.0",
+  "author": {
+    "name": "Tuo Studio",
+    "email": "dev@tuostudio.com"
+  },
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.2.1",
+    "com.unity.addressables": "1.21.19",
+    "com.unity.localization": "1.4.4"
+  },
+  "keywords": ["mobile", "framework", "gamemanager", "audio", "save"]
+}

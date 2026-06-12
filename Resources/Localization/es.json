@@ -1,0 +1,12 @@
+{
+  "_meta": { "language": "es", "version": 1 },
+  "btn_play":        "Jugar",
+  "btn_settings":    "Ajustes",
+  "btn_back":        "Atrás",
+  "hud_score":       "Puntuación",
+  "hud_best":        "Mejor",
+  "gameover_title":  "Fin de la partida",
+  "gameover_retry":  "Reintentar",
+  "gameover_home":   "Menú",
+  "lives_remaining": "Te {0:queda|quedan} {0} {0:vida|vidas}"
+}

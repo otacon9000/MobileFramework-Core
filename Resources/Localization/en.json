@@ -1,0 +1,12 @@
+{
+  "_meta": { "language": "en", "version": 1 },
+  "btn_play":        "Play",
+  "btn_settings":    "Settings",
+  "btn_back":        "Back",
+  "hud_score":       "Score",
+  "hud_best":        "Best",
+  "gameover_title":  "Game Over",
+  "gameover_retry":  "Retry",
+  "gameover_home":   "Menu",
+  "lives_remaining": "You have {0} {0:life|lives} left"
+}
