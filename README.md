@@ -8,7 +8,7 @@ Regola fondamentale: **il Core non sa nulla dei giochi. I giochi sanno tutto del
 Package Manager → *Add package from git URL*:
 
 ```
-https://github.com/tuostudio/MobileFramework-Core.git#v1.0.0
+https://github.com/otaforge/MobileFramework-Core.git#v1.0.0
 ```
 
 ## Avvio rapido

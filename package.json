@@ -1,12 +1,12 @@
 {
-  "name": "com.tuostudio.mobileframework",
+  "name": "com.otaforge.mobileframework",
   "version": "1.0.0",
   "displayName": "Mobile Game Framework",
   "description": "Framework base per giochi mobile Unity. GameManager, AudioManager, SaveSystem, UIManager, LocalizationManager, EventBus.",
   "unity": "6000.0",
   "author": {
-    "name": "Tuo Studio",
-    "email": "dev@tuostudio.com"
+    "name": "Otaforge",
+    "email": "dev@otaforge.com"
   },
   "dependencies": {
     "com.unity.nuget.newtonsoft-json": "3.2.1",
