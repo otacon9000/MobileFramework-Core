@@ -1,4 +1,5 @@
 using MobileFramework.Core.Contracts;
+using Newtonsoft.Json;
 
 namespace MobileFramework.Core.Managers.Save
 {
@@ -9,8 +10,9 @@ namespace MobileFramework.Core.Managers.Save
     /// </summary>
     public abstract class VersionedSaveData : IGameSaveData
     {
-        public abstract string SaveKey { get; }
-        public abstract int DataVersion { get; }
+        // Metadati: vivono nell'envelope del SaveSystem, non vanno nel payload serializzato.
+        [JsonIgnore] public abstract string SaveKey { get; }
+        [JsonIgnore] public abstract int DataVersion { get; }
 
         /// <summary>
         /// Default: nessuna migrazione. I campi con lo stesso nome sono già stati

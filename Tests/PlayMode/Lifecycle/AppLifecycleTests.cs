@@ -10,7 +10,7 @@ using UnityEngine.TestTools;
 namespace MobileFramework.Tests.PlayMode.Lifecycle
 {
     /// <summary>IMiniGame minimo per i test PlayMode (i Fake* vivono nell'assembly EditMode).</summary>
-    internal sealed class TestMiniGame : IMiniGame
+    public sealed class TestMiniGame : IMiniGame
     {
         public string GameId => "playmode_test_game";
 
