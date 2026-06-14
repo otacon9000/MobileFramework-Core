@@ -12,3 +12,10 @@
 - TODO: Flappy Clone nel Template
 - TODO: GitHub Actions CI/CD
 - TODO: prima repo privata Game_FlappyClone
+## Sessione 3 — 2026-06-14
+- MobileFramework-Template completato con Flappy Clone
+- README pubblico, LICENSE, Topics su entrambi i repo
+- Link Core → Template aggiornato
+- FrameworkSetupWindow marcato Experimental
+- TODO: Game_FlappyClone repo privata
+- TODO: GitHub Actions CI/CD sul Core
