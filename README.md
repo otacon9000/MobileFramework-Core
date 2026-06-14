@@ -40,7 +40,7 @@ Or add the dependency directly to `Packages/manifest.json`:
 | `ErrorHandler` | Catches unhandled exceptions and recovers to the menu. | ✅ Stable |
 | `JsonSerializer` | Single Newtonsoft access point for the whole framework. | ✅ Stable |
 | `BinarySerializer` | Optional binary path for large saves. | 🧪 Experimental |
-| Editor tooling | `FrameworkSetupWindow` to configure a new game project. | 🚧 Planned |
+| Editor tooling | `FrameworkSetupWindow` to configure a new game project. | 🧪 Experimental |
 
 ## Quick Start
 
@@ -97,8 +97,8 @@ and the versioning process.
 
 ## Game Template
 
-Start a new title from the project template (placeholder — coming soon):
-**https://github.com/otacon9000/MobileFramework-Template**
+Start a new title from the project template:
+**[MobileFramework-Template](https://github.com/otacon9000/MobileFramework-Template)**
 
 ## License
 
