@@ -1,28 +1,35 @@
 # Changelog
 
-Tutte le modifiche rilevanti al pacchetto sono documentate qui.
-Il formato segue [Keep a Changelog](https://keepachangelog.com/) e [Semantic Versioning](https://semver.org/).
+All notable changes to this package are documented here.
+This project follows [Keep a Changelog](https://keepachangelog.com/) and
+[Semantic Versioning](https://semver.org/).
 
 ## [1.0.2] - 2026-06-13
 ### Fixed
-- Il pacchetto ora include i file `.meta`: senza di essi Unity non risolveva l'assembly `MobileFramework.Core` (errori CS0246/CS0234) e il Test Runner non rilevava i test quando importato da Git URL.
-- `SaveSystem`: `SaveKey` e `DataVersion` non vengono più serializzati nel payload (`[JsonIgnore]`). Prima inquinavano il JSON salvato e facevano fallire la migrazione in `MigrateFrom`.
-- Test PlayMode: `TestMiniGame` reso `public` per risolvere CS0052 (accessibilità incoerente con `LifecycleTestBase.MiniGame`).
+- The package now ships its `.meta` files. Without them, importing from a Git URL
+  failed to resolve the `MobileFramework.Core` assembly (CS0246/CS0234) and the Test
+  Runner did not detect the package tests.
+- `SaveSystem`: `SaveKey` and `DataVersion` are no longer serialized into the payload
+  (`[JsonIgnore]`). They previously polluted the saved JSON and broke schema migration
+  in `MigrateFrom`. Metadata now lives only in the save envelope.
+- PlayMode tests: `TestMiniGame` is now `public`, resolving CS0052 (inconsistent
+  accessibility with `LifecycleTestBase.MiniGame`).
 
 ### Changed
-- Email dell'autore aggiornata in `package.json`.
+- Author email and repository URL (`otacon9000`) corrected in `package.json` / docs.
+- `package.json` version aligned to the published tag.
 
 ## [1.0.0] - 2026-06-12
 ### Added
-- Prima release stabile
-- GameManager con state machine estensibile e StateTransitionValidator
-- AudioManager con pool di AudioSource senza GC
-- SaveSystem con versioning, migrazione automatica e checksum anti-manomissione
-- UIManager con stack pannelli e override via IUISlot
-- EventBus tipizzato (solo struct)
-- LocalizationManager con fallback, plurali e supporto RTL
-- InputManager touch/swipe/pinch
-- HapticManager iOS/Android
-- AppLifecycleHandler con stato OSInterrupt
-- ErrorHandler con recovery verso il menu
-- Suite test EditMode e PlayMode
+- First stable release.
+- `GameManager` with an extensible state machine and `StateTransitionValidator`.
+- `AudioManager` with a zero-GC `AudioSource` pool.
+- `SaveSystem` with versioning, automatic migration, and an anti-tamper checksum.
+- `UIManager` with a panel stack and overrides via `IUISlot`.
+- Strongly-typed `EventBus` (struct-only).
+- `LocalizationManager` with fallback, plurals, and RTL support.
+- `InputManager` for touch / swipe / pinch.
+- `HapticManager` for iOS/Android.
+- `AppLifecycleHandler` with an OSInterrupt state.
+- `ErrorHandler` with recovery to the menu.
+- EditMode and PlayMode test suites.
