@@ -35,6 +35,7 @@ jobs:
         with:
           unityVersion: 6000.4.10f1
           testMode: editmode
+          packageMode: true
           artifactsPath: test-results
           githubToken: ${{ secrets.GITHUB_TOKEN }}
 
